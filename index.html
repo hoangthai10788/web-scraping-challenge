@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Latest Mars news</h1>
+        <h3 class="heading">{{title_para.news_title}}</h3>
+        <p>{{title_para.news_p}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <h3>Featured Mars Image</h3>
+        <img src="{{ featured_img.image }}" alt="">
+      </div>
+
+      <div class="col-md-5" style="border: 4px solid white">
+        <h3>Current Weather On Mars</h3>
+        <p>{{ facts.mars_weather }}</p>       
+      </div>
+
+      <div class="col-md-5">
+        <h3>Mars Facts</h3>
+        
+        <div>
+          <table border="1" class="dataframe">
+            <thead>
+              <tr style="text-align: right;">
+                <th></th>
+                <th>Parameters</th>
+                <th>Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0</th>
+                <td>Equatorial Diameter:</td>
+                <td>6,792 km</td>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>Polar Diameter:</td>
+                <td>6,752 km</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Mass:</td>
+                <td>6.39 × 10^23 kg (0.11 Earths)</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>Moons:</td>
+                <td>2 (Phobos &amp; Deimos)</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>Orbit Distance:</td>
+                <td>227,943,824 km (1.38 AU)</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>Orbit Period:</td>
+                <td>687 days (1.9 years)</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td>Surface Temperature:</td>
+                <td>-87 to -5 °C</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>First Record:</td>
+                <td>2nd millennium BC</td>
+              </tr>
+              <tr>
+                <th>8</th>
+                <td>Recorded By:</td>
+                <td>Egyptian astronomers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+                
+
+    </div>
+
+    <div class="container-fluid">
+      <h1>Mars Hemispheres</h1>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-5">
+
+            <img src="{{ img1.img_url}}" height="40%" width="90%" alt="">
+            <h3> {{ img1.title }}</h3>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <img src="{{ img2.img_url }}" height="40%" width="90%" alt="">
+            <h3> {{ img2.title }}</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-5">
+
+            <img src="{{ img3.img_url }}" height="40%" width="90%" alt="">
+            <h3> {{ img3.title }}</h3>
+
+
+          </div>
+
+          <div class="col-md-5">
+
+            <img src="{{ img4.img_url }}" height="40%" width="90%" alt="">
+            <h3> {{ img4.title }}</h3>
+
+
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</body>
+
+</html>
+
